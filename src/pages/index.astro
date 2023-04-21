@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/landing/Hero.astro";
-import Products from "../components/landing/Products.astro";
+import Tools from "../components/landing/Tools.astro";
+import About from "../components/landing/About.astro";
 import { AstroSeo } from "@astrolib/seo";
 ---
 
@@ -9,13 +10,14 @@ import { AstroSeo } from "@astrolib/seo";
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
 <AstroSeo
-  title="Mike's starter"
-  description="Your site description goes here"
-  canonical="https://www.michaelandreuzza.com"
+  title="nvc at work"
+  description="Free tools for developing self-awareness and improving communication outcomes."
+  canonical="https://www.nvcatwork.com"
   openGraph={{
-    url: "https://www.michaelandreuzza.com",
-    title: "Open Graph Title",
-    description: "Open Graph Description",
+    url: "https://www.nvcatwork.com",
+    title: "nvc at work",
+    description:
+      "Free tools for developing self-awareness and improving communication outcomes. ",
     images: [
       {
         url: "https://www.michaelandreuzza.com/opengraph/social-og.jpg",
@@ -36,13 +38,9 @@ Use AstroSeo in all the pages you want different Seo than the index page
     ],
     site_name: "YourSitesName",
   }}
-  twitter={{
-    handle: "@TwitterHandle",
-    site: "@site",
-    cardType: "summary_large_image",
-  }}
 />
 <BaseLayout>
   <Hero />
-  <Products />
+  <Tools />
+  <About />
 </BaseLayout>
