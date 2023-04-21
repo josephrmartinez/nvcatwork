@@ -2,4 +2,44 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Self-Empathy App" />
+<BaseLayout title="Self-Empathy App">
+  <main aria-labelledby="header" class="relative overflow-hidden" id="tools">
+    <h2 class="sr-only" id="header">self empathy app</h2>
+    <div
+      class="relative mx-auto px-8 max-w-7xl py-8 lg:py-14 lg:px-36 md:px-12"
+    >
+      <div
+        class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <a href="./selfempathyapp">
+          <img
+            class="w-full rounded-3xl shadow-2xl"
+            src="./public/selfempathy.png"
+            alt="self empathy app"
+            width="1310"
+            height="873"
+          />
+        </a>
+        <div class="pt-4 flex flex-col px-6 h-full">
+          <p
+            class="my-5 text-xl font-semibold leading-6 tracking-wide text-negroni-300"
+          >
+            self-empathy app
+          </p>
+
+          <div class="text-negroni-300">
+            Guides users on a self-empathy process to understand and accept
+            their own emotions, thoughts, and experiences with kindness,
+            compassion, and non-judgment. The app uses Nonviolent Communication
+            (NVC) principles, which focus on expressing oneself in an honest,
+            clear, and compassionate way while also listening to others with
+            empathy and understanding. The app helps users identify and
+            articulate their initial and underlying feelings, as well as their
+            needs, which can lead to better emotional regulation, stress
+            management, and healthier choices.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
