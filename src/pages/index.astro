@@ -44,3 +44,18 @@ Use AstroSeo in all the pages you want different Seo than the index page
   <Tools />
   <About />
 </BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll("button");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", copyEmailAddress);
+  });
+
+  function copyEmailAddress() {
+    navigator.clipboard.writeText("joseph.r.martinez@gmail.com");
+    buttons.forEach((button) => {
+      button.textContent = "email copied";
+    });
+  }
+</script>

@@ -1,10 +1,14 @@
+---
+import EmailButton from "../EmailButton";
+---
+
 <main aria-labelledby="header" class="relative overflow-hidden" id="about">
   <h2 class="sr-only" id="header">Header</h2>
   <div
-    class="grid grid-cols-2 mx-auto px-8 max-w-7xl py-8 lg:py-24 lg:px-36 md:px-12"
+    class="md:grid md:grid-cols-2 mx-auto px-8 max-w-7xl py-8 lg:py-24 lg:px-36 md:px-12"
   >
     <div>
-      <div class="text-4xl font-bold text-negroni-300">About</div>
+      <div class="text-4xl font-bold text-negroni-500 mb-3">About</div>
       <div class="text-negroni-300 max-w-prose">
         Joseph Martinez has been giving workshops and developing learning
         material for empathetic and Nonviolent Communication since 2015. He has
@@ -17,13 +21,29 @@
       </div>
     </div>
 
-    <div>
-      <div>open source</div>
-      <div>respect user privacy</div>
-      <div>original</div>
+    <div class="flex flex-col align-middle items-center justify-center my-12">
+      <button
+        class="items-center justify-center rounded-full duration-200 border border-negroni-500 inline-flex px-6 py-3 text-center w-full max-w-[220px] text-negroni-500 font-medium lg:w-[220px] hover:border-2"
+        >grab email</button
+      >
     </div>
   </div>
 </main>
+
+<!-- 
+  <script>
+    function copyToClipboard(text, button) {
+      navigator.clipboard.writeText(text).then(
+        function () {
+          console.log("Text copied to clipboard");
+          button.innerHTML = "email copied";
+        },
+        function () {
+          console.log("Error copying text to clipboard");
+        }
+      );
+    }
+  </script> -->
 
 <!-- 
 

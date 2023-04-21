@@ -16,9 +16,14 @@
   },
   "dependencies": {
     "@astrojs/partytown": "^1.0.0",
+    "@astrojs/react": "^2.1.1",
     "@astrojs/sitemap": "^1.0.0",
     "@astrolib/seo": "^0.3.0",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
     "astro-compress": "^1.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tailwindcss": "^3.2.7"
   }
 }
