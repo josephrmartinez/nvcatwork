@@ -1,7 +1,36 @@
 ---
 import ProjectPage from "../components/ProjectPage.astro";
+import { AstroSeo } from "@astrolib/seo";
 ---
 
+<AstroSeo
+  title="do values"
+  description="Values-based to-do app"
+  canonical="https://www.nvcatwork.com/dovalues"
+  openGraph={{
+    url: "https://www.nvcatwork.com/dovalues",
+    title: "do values",
+    description:
+      "Values-based to do app. Developed by communication consultant, workshop facilitator, and full-stack software engineer Joseph Martinez.",
+    images: [
+      {
+        url: "./dovalues.webp",
+        width: 1310,
+        height: 873,
+        alt: "do values demo",
+        type: "image/webp",
+      },
+      {
+        url: "./Joseph.webp",
+        width: 600,
+        height: 600,
+        alt: "joseph",
+        type: "image/webp",
+      },
+    ],
+    site_name: "nvc at work",
+  }}
+/>
 <ProjectPage
   title="do values"
   github="https://github.com/josephrmartinez/dovalues"

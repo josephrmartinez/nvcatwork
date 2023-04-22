@@ -1,7 +1,36 @@
 ---
 import ProjectPage from "../components/ProjectPage.astro";
+import { AstroSeo } from "@astrolib/seo";
 ---
 
+<AstroSeo
+  title="nineideas"
+  description="Values-based to-do app"
+  canonical="https://www.nvcatwork.com/nineideas"
+  openGraph={{
+    url: "https://www.nvcatwork.com/nineideas",
+    title: "nineideas",
+    description:
+      "Practice abundant thinking. Make a habit of developing ideas every day. Developed by communication consultant, workshop facilitator, and full-stack software engineer Joseph Martinez.",
+    images: [
+      {
+        url: "./nineideas.webp",
+        width: 1310,
+        height: 873,
+        alt: "nineideas demo",
+        type: "image/webp",
+      },
+      {
+        url: "./Joseph.webp",
+        width: 600,
+        height: 600,
+        alt: "joseph",
+        type: "image/webp",
+      },
+    ],
+    site_name: "nvc at work",
+  }}
+/>
 <ProjectPage
   title="nineideas"
   github="https://github.com/josephrmartinez/nineideas"

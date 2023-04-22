@@ -1,9 +1,38 @@
 ---
 import ProjectPage from "../components/ProjectPage.astro";
+import { AstroSeo } from "@astrolib/seo";
 ---
 
+<AstroSeo
+  title="self-empathy app"
+  description="Connect complaint to core value. Practice self-compassion with NVC process. Developed by communication consultant, workshop facilitator, and full-stack software engineer Joseph Martinez."
+  canonical="https://www.nvcatwork.com/selfempathyapp"
+  openGraph={{
+    url: "https://www.nvcatwork.com/selfempathyapp",
+    title: "self-empathy app",
+    description:
+      "Connect complaint to core value. Practice self-compassion with NVC process. Developed by communication consultant, workshop facilitator, and full-stack software engineer Joseph Martinez.",
+    images: [
+      {
+        url: "./selfempathy.webp",
+        width: 1310,
+        height: 873,
+        alt: "self-empathy app demo",
+        type: "image/webp",
+      },
+      {
+        url: "./Joseph.webp",
+        width: 600,
+        height: 600,
+        alt: "joseph",
+        type: "image/webp",
+      },
+    ],
+    site_name: "nvc at work",
+  }}
+/>
 <ProjectPage
-  title="Self-Empathy App"
+  title="self-empathy app"
   github="https://github.com/josephrmartinez/selfempathyapp"
   blogPost="https://josephm.dev/blog/20230323/"
   desc="Guides users on a self-empathy process to understand and accept their own emotions, thoughts, and experiences with kindness, compassion, and non-judgment. The app uses Nonviolent Communication (NVC) principles, which focus on expressing oneself in an honest, clear, and compassionate way while also listening to others with empathy and understanding. The app helps users identify and articulate their initial and underlying feelings, as well as their needs, which can lead to better emotional regulation, stress management, and healthier choices."

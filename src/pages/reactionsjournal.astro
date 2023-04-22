@@ -1,9 +1,38 @@
 ---
 import ProjectPage from "../components/ProjectPage.astro";
+import { AstroSeo } from "@astrolib/seo";
 ---
 
+<AstroSeo
+  title="habitual reactions journal"
+  description="Develop awareness of habitual reactions in conversation. Learn to respond intentionally instead of habitually in conversation."
+  canonical="https://www.nvcatwork.com/reactionsjournal"
+  openGraph={{
+    url: "https://www.nvcatwork.com/reactionsjournal",
+    title: "habitual reactions journal",
+    description:
+      "Develop awareness of habitual reactions in conversation. Learn to respond intentionally instead of habitually in conversation. Developed by communication consultant, workshop facilitator, and full-stack software engineer Joseph Martinez.",
+    images: [
+      {
+        url: "./hr.webp",
+        width: 1310,
+        height: 873,
+        alt: "reactions journal demo",
+        type: "image/webp",
+      },
+      {
+        url: "./Joseph.webp",
+        width: 600,
+        height: 600,
+        alt: "joseph",
+        type: "image/webp",
+      },
+    ],
+    site_name: "nvc at work",
+  }}
+/>
 <ProjectPage
-  title="Habitual Reactions Journal"
+  title="habitual reactions journal"
   github="https://github.com/josephrmartinez/reactionsjournal"
   blogPost="https://josephm.dev/blog/20230402/"
   desc="An interactive tool designed to help users develop awareness of unproductive habitual reactions in conversation. By logging these patterns, users can begin to respond intentionally and avoid reactive behavior that can damage communication. What is measured is managed. The app provides a more comprehensive and sustainable approach to supporting participants in their development of empathetic listening and NVC skills when compared with just workshops alone."
